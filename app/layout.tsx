@@ -10,8 +10,7 @@ const geistSans = localFont({
 
 export const metadata: Metadata = {
   title: 'Essencial Psi',
-  description:
-    'Deixe que cuidemos da sua clínica você. Assine nossa plataforma e tenha seus dados seguros',
+  
 };
 
 export default function RootLayout({

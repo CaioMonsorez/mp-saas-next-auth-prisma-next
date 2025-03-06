@@ -37,3 +37,32 @@ Formulario [registerForm]
         [ ] Sessões expiradas 
         [ ] Possibilidade de login com autenticação no Auth0
         [ ] Possibilidade de login com autenticação com google 
+
+
+
+==============================================================================================================================================
+---------------------------------- SIDEBAR ---------------------------------------------------------------------------------
+==============================================================================================================================================
+
+
+
+
+
+ 1- Pagina Inicial 
+ 2- Agenda 
+ 3- Paciente 
+ 4- Financeiro 
+ 5- Dashboard 
+ 6- Suporte Técnico 
+ 1. Página Inicial
+
+ 
+[ ]Mensagem de saudação, Olá XXXXX
+Pequeno indicador financeiro (Dashboard Card)
+valor total sessoes realizadas no mês
+Total valor recebido no mês
+Lista
+Exibir lista de Próximos atendimentos do dia ORDEM DA LISTA: horário, paciente, status (Dropdown) ex: 10:00 | Isabela | Sessão realizada > Reagendada > Falta
+Lembrete: Mensagem informativa de Pacientes com pagamento pendente msg: Voce possui x pagamentos em atraso Botão para levar a pagina do financeiro
+Botões rápidos:
+"Novo paciente" | "Novo agendamento" 
