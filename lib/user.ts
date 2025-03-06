@@ -25,7 +25,7 @@ export async function findUserByCredentials(
   const passwordMatch = compareSync(password, user.password);
 
   if (passwordMatch) {
-    return { email: user.email || '', name: user.name || '' }; 
+    return { email: user.email || '', name: user.name || '' }; // Garante que email e name são strings
   }
 
   return null;

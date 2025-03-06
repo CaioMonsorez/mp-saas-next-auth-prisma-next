@@ -1,4 +1,3 @@
-
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -6,12 +5,12 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { signIn } from 'next-auth/react';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation'; // Importe useRouter
+import { useRouter } from 'next/navigation';
 
 export default function LoginForm() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const router = useRouter(); // Inicialize useRouter
+  const router = useRouter();
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -30,13 +29,17 @@ export default function LoginForm() {
 
     setLoading(false);
 
-    if (!res || !res.ok) {
-      setError("Seu Login está incorreto, tente novamente.");
+    if (res?.error) {
+      if (res.error === 'CredentialsSignin') {
+        setError("Usuário ou senha incorretos.");
+      } else {
+        setError("Erro ao fazer login. Tente novamente.");
+      }
       return;
     }
 
-    router.push("/dashboard"); // Use router.push para redirecionar
-  }
+    router.push("/dashboard");
+  };
 
   return (
     <>
@@ -52,7 +55,7 @@ export default function LoginForm() {
         </div>
         <div>
           <Button className="w-full mt-6" type="submit" disabled={loading}>
-            {loading ? "Entrando..." : "Login"}
+            {loading ? "Autenticando..." : "Login"}
           </Button>
         </div>
       </form>
