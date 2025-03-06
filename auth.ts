@@ -1,8 +1,11 @@
 import NextAuth from 'next-auth';
 import Credentials from "next-auth/providers/credentials";
+import { PrismaAdapterCustom } from './prisma-adapter-custom';
 import findUserByCredentials from "@/lib/user";
+import  db  from "@/lib/db";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
+  adapter: PrismaAdapterCustom(db), // Use o adaptador Prisma personalizado
   providers: [
     Credentials({
       credentials: {

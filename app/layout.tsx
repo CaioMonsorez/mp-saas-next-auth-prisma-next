@@ -9,9 +9,9 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'LivroSaas',
+  title: 'Essencial Psi',
   description:
-    'Deixe que nós fazermos a curadoria para você. Assine nossa plataforma e receba todos os meses um ebook novo de programação.',
+    'Deixe que cuidemos da sua clínica você. Assine nossa plataforma e tenha seus dados seguros',
 };
 
 export default function RootLayout({

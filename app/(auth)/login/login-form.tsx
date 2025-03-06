@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -5,10 +6,12 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { signIn } from 'next-auth/react';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation'; // Importe useRouter
 
 export default function LoginForm() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const router = useRouter(); // Inicialize useRouter
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -20,7 +23,7 @@ export default function LoginForm() {
     const password = formData.get("password") as string;
 
     const res = await signIn('credentials', {
-      redirect: false, // Evita redirecionamento automático
+      redirect: false,
       email,
       password,
     });
@@ -32,8 +35,8 @@ export default function LoginForm() {
       return;
     }
 
-    window.location.href = "/dashboard"; // Redirecionamento após sucesso
-  };
+    router.push("/dashboard"); // Use router.push para redirecionar
+  }
 
   return (
     <>

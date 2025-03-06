@@ -21,10 +21,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // Adicionado baseUrl
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"],
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"]
     },
     "target": "ES2017"
   },
