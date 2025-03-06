@@ -50,27 +50,19 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Dashboard",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
-        },
-        {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
+          title: "Geral",
           url: "#",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Agenda",
       url: "#",
       icon: Bot,
       items: [
@@ -78,58 +70,31 @@ const data = {
           title: "Genesis",
           url: "#",
         },
-        {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
+
       ],
     },
     {
-      title: "Documentation",
+      title: "Paciente",
       url: "#",
       icon: BookOpen,
       items: [
         {
-          title: "Introduction",
+          title: "Cadastro",
           url: "#",
         },
         {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
+          title: "Pagamentos",
           url: "#",
         },
       ],
     },
     {
-      title: "Settings",
+      title: "Suporte Técnico",
       url: "#",
       icon: Settings2,
       items: [
         {
           title: "General",
-          url: "#",
-        },
-        {
-          title: "Team",
-          url: "#",
-        },
-        {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
           url: "#",
         },
       ],
