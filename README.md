@@ -20,7 +20,6 @@ Funções Página de Login [registerAction]
 Formulario [registerForm]
 
         [x] Campos para e-mail e senha 
-        [ ] Opção de "Esqueci minha senha"
         [x] Botão para entrar
         [x] Verifica se o e-mail já está cadastrado
         [x] Hash da senha bcrypt antes de salvar no banco
@@ -30,18 +29,21 @@ Formulario [registerForm]
         [x] Verifica se o e-mail já está cadastrado
         [x] Cadastra usuário no banco de dados
         [x] Utilizar NextAuth0 para autenticaçao
+        [ ] Opção de "Esqueci minha senha"
+        [ ] Gerar token para enviar ao Backend
         [ ] MFA
-        [ ] Rate limiting de 5 falhas e bloqueio temporário de conta, 
+        [ ] Rate limiting de 5 falhas e bloqueio temporário de conta
         [ ] Bloqueio de logins suspeitos 
         [ ] Geolocalização
         [ ] Sessões expiradas 
         [ ] Possibilidade de login com autenticação no Auth0
+        [ ] Campo de Senha com contador de caracteres e so habilitar o REGISTRO quandoa atingir caracterer minimo
         [ ] Possibilidade de login com autenticação com google 
 
 
 
 ==============================================================================================================================================
----------------------------------- SIDEBAR ---------------------------------------------------------------------------------
+---------------------------------------------------- SIDEBAR ---------------------------------------------------------------------------------
 ==============================================================================================================================================
 
 
